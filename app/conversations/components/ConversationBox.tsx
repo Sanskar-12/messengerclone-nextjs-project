@@ -17,11 +17,8 @@ interface ConversationBoxProps {
 const ConversationBox = ({ data, selected }: ConversationBoxProps) => {
   const otherUser = useOtherUser(data);
 
-  console.log(data);
   const session = useSession();
   const router = useRouter();
-
-  console.log(otherUser);
 
   const handleClick = useCallback(() => {
     router.push(`/conversations/${data.id}`);
