@@ -8,7 +8,7 @@ import clsx from "clsx";
 import { format } from "date-fns";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import { use, useCallback, useMemo } from "react";
+import { useCallback, useMemo } from "react";
 
 interface ConversationBoxProps {
   data: FullConversationType;
